@@ -6,3 +6,140 @@
 /*img {
   max-width: 100%;
 } */
+/* -----------basics */
+@font-face {
+  font-family: cormorant;
+  src: url(../fonts/CormorantGaramond-Regular.ttf);
+}
+@font-face {
+  font-family: cormorantB;
+  src: url(../fonts/CormorantGaramond-Bold.ttf);
+}
+@font-face {
+  font-family: comorantI;
+  src: url(../fonts/CormorantGaramond-Italic.ttf);
+}
+
+h3 {
+  font-family: cormorant, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+html {
+  font-family: cormorant, Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #e9e9e0;
+}
+
+/* ------------ header */
+
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+  font-variant: small-caps;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.info {
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+}
+
+/* -------------- main */
+
+main {
+  height: 100vh;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* -------- left side */
+.left {
+  width: 70%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 5px;
+}
+.left div {
+  height: auto;
+}
+.left div:nth-child(1) {
+  font-size: 35px;
+  grid-column: 1/-1;
+
+  align-self: center;
+  justify-self: center;
+}
+.kitchenimg {
+  grid-row: 2 / 4;
+  grid-column: 3 / 4;
+}
+.kitchenimg img {
+  width: 500px;
+  height: auto;
+}
+
+/* --------- right side */
+
+.right {
+  width: 23%;
+  height: 80vh;
+  /* border: 1px solid black; */
+}
+h4 {
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+}
+.sponsores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+}
+.sponsores div {
+  border: 5px solid black;
+  width: 80%;
+  height: 38vh;
+}
+.addhere {
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+}
+.sponsores img {
+  width: 60%;
+  height: auto;
+}
+.knives {
+  padding: 40px;
+}
+.knives p:first-of-type {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.knives p:nth-of-type(2) {
+  text-align: center;
+}
+.knives p:last-of-type {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #737b80;
+  text-align: center;
+  border-bottom: 4px solid #737b80;
+}
+
+.sponsores div:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
